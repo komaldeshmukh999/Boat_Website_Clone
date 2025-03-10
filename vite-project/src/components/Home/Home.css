@@ -1,0 +1,27 @@
+.main-content .layout {
+  max-width: calc(100% - 20px); /* Mobile default */
+  margin: 0 auto;
+  padding: 0 10px; /* Add some horizontal padding for mobile */
+}
+
+/* Laptop screen (and larger) */
+@media only screen and (min-width: 768px) {
+  .main-content .layout {
+    max-width: 1200px; /* Laptop max-width */
+    padding: 0; /* Remove mobile padding on larger screens */
+  }
+}
+
+/* Larger laptop/desktop screens */
+@media only screen and (min-width: 1200px) {
+  .main-content .layout {
+    max-width: 1200px; /* Maintain 1200px on larger screens */
+  }
+}
+
+/* Even larger desktop screens */
+@media only screen and (min-width: 1536px) {
+  .main-content .layout {
+    max-width: 1400px; /* Increase max-width for very large screens if desired */
+  }
+}

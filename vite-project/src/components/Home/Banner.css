@@ -1,0 +1,132 @@
+.hero-banner {
+    padding: 40px 0;
+    position: relative;
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+  }
+  
+  @media (min-width: 1024px) { /* Adjust for typical laptop screen */
+    .hero-banner {
+      height: calc(125vh - 90px);
+    }
+  }
+  
+  .hero-banner .content {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  @media (min-width: 1024px) { /* Adjust for typical laptop screen */
+    .hero-banner .content {
+      flex-direction: row;
+      max-width: 1200px;
+    }
+  }
+  
+  .hero-banner .content .banner-img {
+    position: relative;
+    z-index: 9;
+    width: 250px; /* Adjusted initial width */
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 1024px) { /* Adjust for typical laptop screen */
+    .hero-banner .content .banner-img {
+      width: 450px; /* Slightly reduced desktop width */
+      margin-right: 40px; /* Slightly reduced margin */
+      margin-top: 30px; /* Slightly reduced margin */
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .hero-banner .content .banner-img {
+      width: 550px; /* Slightly reduced xxl width */
+      margin-right: 0;
+      margin-top: 0;
+    }
+  }
+  
+  .hero-banner .content .text-content {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 1024px) { /* Adjust for typical laptop screen */
+    .hero-banner .content .text-content {
+      position: absolute;
+      left: 40px; /* Slightly reduced left position */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .hero-banner .content .text-content {
+      left: 0;
+    }
+  }
+  
+  .hero-banner .content .text-content h1 {
+    font-size: 70px; /* Slightly reduced initial font size */
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 1024px) { /* Adjust for typical laptop screen */
+    .hero-banner .content .text-content h1 {
+      font-size: 150px; /* Slightly reduced desktop font size */
+    }
+  }
+  
+  .hero-banner .content .text-content p {
+    max-width: 250px; /* Slightly increased initial max width */
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 1024px) { /* Adjust for typical laptop screen */
+    .hero-banner .content .text-content p {
+      max-width: 450px; /* Slightly reduced desktop max width */
+      font-size: 15px;
+      line-height: 22px; /* Slightly increased desktop line height */
+      margin-bottom: 30px; /* Slightly reduced desktop margin */
+    }
+  }
+  
+  .hero-banner .content .text-content .ctas {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Slightly reduced gap */
+  }
+  
+  .hero-banner .content .text-content .ctas .banner-cta {
+    text-transform: uppercase;
+    font-size: 10px; /* Slightly increased initial font size */
+    font-weight: 400; /* Slightly increased initial font weight */
+    width: fit-content;
+    border: 2px solid white;
+    padding: 8px 16px; /* Slightly reduced padding */
+    transition: all ease 0.3s;
+    cursor: pointer;
+  }
+  
+  .hero-banner .content .text-content .ctas .banner-cta.v2 {
+    background-color: white;
+    color: black;
+  }
+  
+  .hero-banner .content .text-content .ctas .banner-cta:hover {
+    opacity: 0.6;
+  }
